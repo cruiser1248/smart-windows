@@ -26,7 +26,7 @@
             <column name="emil" length="50" />
         </property>
         <property name="tel" type="java.lang.Integer">
-            <column name="tel" not-null="true" />
+            <column name="tel" />
         </property>
         <property name="familyAddress" type="java.lang.String">
             <column name="familyAddress" not-null="true" />

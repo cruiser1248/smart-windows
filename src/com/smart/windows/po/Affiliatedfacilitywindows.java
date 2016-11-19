@@ -29,12 +29,6 @@ public class Affiliatedfacilitywindows implements java.io.Serializable {
 	public Affiliatedfacilitywindows() {
 	}
 
-	/** minimal constructor */
-	public Affiliatedfacilitywindows(String status, String value) {
-		this.status = status;
-		this.value = value;
-	}
-
 	/** full constructor */
 	public Affiliatedfacilitywindows(Mainfacility mainfacility, String status,
 			String value, Integer user0id, Integer user1id, Integer user2id,

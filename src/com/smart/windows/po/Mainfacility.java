@@ -13,6 +13,7 @@ public class Mainfacility implements java.io.Serializable {
 
 	private Integer mainFaclityId;
 	private Familyadmin familyadmin;
+	private Integer physicalId;
 	private String name;
 	private String status;
 	private Set affiliatedfacilitywindowses = new HashSet(0);
@@ -25,15 +26,18 @@ public class Mainfacility implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Mainfacility(String name, String status) {
+	public Mainfacility(Integer physicalId, String name, String status) {
+		this.physicalId = physicalId;
 		this.name = name;
 		this.status = status;
 	}
 
 	/** full constructor */
-	public Mainfacility(Familyadmin familyadmin, String name, String status,
-			Set affiliatedfacilitywindowses, Set affiliatedfacilitykeies) {
+	public Mainfacility(Familyadmin familyadmin, Integer physicalId,
+			String name, String status, Set affiliatedfacilitywindowses,
+			Set affiliatedfacilitykeies) {
 		this.familyadmin = familyadmin;
+		this.physicalId = physicalId;
 		this.name = name;
 		this.status = status;
 		this.affiliatedfacilitywindowses = affiliatedfacilitywindowses;
@@ -56,6 +60,14 @@ public class Mainfacility implements java.io.Serializable {
 
 	public void setFamilyadmin(Familyadmin familyadmin) {
 		this.familyadmin = familyadmin;
+	}
+
+	public Integer getPhysicalId() {
+		return this.physicalId;
+	}
+
+	public void setPhysicalId(Integer physicalId) {
+		this.physicalId = physicalId;
 	}
 
 	public String getName() {

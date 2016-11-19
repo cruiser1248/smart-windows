@@ -29,12 +29,6 @@ public class Affiliatedfacilitykey implements java.io.Serializable {
 	public Affiliatedfacilitykey() {
 	}
 
-	/** minimal constructor */
-	public Affiliatedfacilitykey(String status, String value) {
-		this.status = status;
-		this.value = value;
-	}
-
 	/** full constructor */
 	public Affiliatedfacilitykey(Mainfacility mainfacility, String status,
 			String value, Integer user0id, Integer user1id, Integer user2id,

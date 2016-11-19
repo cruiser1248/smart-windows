@@ -25,6 +25,7 @@ import com.smart.windows.po.Mainfacility;
 public class MainfacilityDAO extends HibernateDaoSupport {
 	private static final Log log = LogFactory.getLog(MainfacilityDAO.class);
 	// property constants
+	public static final String PHYSICAL_ID = "physicalId";
 	public static final String NAME = "name";
 	public static final String STATUS = "status";
 
@@ -90,6 +91,10 @@ public class MainfacilityDAO extends HibernateDaoSupport {
 			log.error("find by property name failed", re);
 			throw re;
 		}
+	}
+
+	public List findByPhysicalId(Object physicalId) {
+		return findByProperty(PHYSICAL_ID, physicalId);
 	}
 
 	public List findByName(Object name) {

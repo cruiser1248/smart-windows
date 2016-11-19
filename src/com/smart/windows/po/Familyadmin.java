@@ -29,12 +29,11 @@ public class Familyadmin implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Familyadmin(String name, String pwd, String status, Integer tel,
+	public Familyadmin(String name, String pwd, String status,
 			String familyAddress) {
 		this.name = name;
 		this.pwd = pwd;
 		this.status = status;
-		this.tel = tel;
 		this.familyAddress = familyAddress;
 	}
 

@@ -13,6 +13,9 @@
         <many-to-one name="familyadmin" class="com.smart.windows.po.Familyadmin" fetch="select">
             <column name="familyAdminID" />
         </many-to-one>
+        <property name="physicalId" type="java.lang.Integer">
+            <column name="physicalID" not-null="true" />
+        </property>
         <property name="name" type="java.lang.String">
             <column name="name" length="50" not-null="true" />
         </property>
